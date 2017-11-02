@@ -1,0 +1,14 @@
+runtime: go
+vm: true
+api_version: go1
+
+env_variables:
+  PREST_PG_USER: 'my value'
+  PREST_PG_PASS: 'my value'
+  PREST_PG_DATABASE: 'my value'
+  PREST_PG_PORT: my value
+  
+
+# Main app.  All the real work is here.
+- url: /.*
+  script: _go_app
